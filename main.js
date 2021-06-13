@@ -1,8 +1,34 @@
 // Defining text characters for the empty and full hearts for you to use later.
-const EMPTY_HEART = '♡'
-const FULL_HEART = '♥'
+const EMPTY_HEART = '♡';
+const FULL_HEART = '♥';
 
-// Your JavaScript code goes here!
+
+let button = document.querySelector(".like-glyph");
+
+button.addEventListener('click', like);
+
+function like() {
+  const likeShape = button.textContent;
+  if(likeShape==EMPTY_HEART) {
+    button.textContent = FULL_HEART;
+  } else {
+    button.textContent = EMPTY_HEART;
+  }
+  //   catch(err) {
+  //   message.innerHTML = "Input is " + err;
+  // }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
